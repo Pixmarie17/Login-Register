@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="card">
+        <div class="form-container" id="form-container">
+            <form id="loginForm" class="form active">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button type="submit">Submit</button>
+                <p class="toggle">Don't have an account? <span onclick="toggleForm()"> Sign Up</span></p>
+            </form>
+
+            <form id="registerForm" class="form">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Submit</button>
+                <p class="toggle">Do you already have an account? <span onclick="toggleForm()">Login</span></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
